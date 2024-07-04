@@ -1,0 +1,19 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  height: 200px;
+}
+
+nav > h1:hover {
+  color:yellow;
+  cursor: pointer;
+}
