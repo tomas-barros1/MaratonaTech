@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Media</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="script/features.js"></script>
+    <script defer src="script/menu-hamburguer.js"></script>
+</head>
+<body>
+    <nav>
+        <img id="logo" src="assets/Logo.svg" alt="logo">
+        <div id="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    
+    <div id="menu" class="menu" >
+        <a href="#features">Features</a>
+        <a href="#sobre-a-empresa">Sobre a Empresa</a>
+        <a href="#jogos">Jogos</a>
+        <a href="#ranking-div">Rankings</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#versoes">Versões</a>
+    </div>
+
+    <div id="features" class="features">
+        <h1>Features</h1>
+        <div class="tabs">
+            <button id="tab-rankings" class="tab-link" onclick="openTab(event, 'Rankings')">Rankings</button>
+            <button id="tab-jogos" class="tab-link" onclick="openTab(event, 'Jogos')">Jogos</button>
+            <button id="tab-perfil" class="tab-link" onclick="openTab(event, 'Perfil')">Perfil</button>
+            <button id="tab-versoes" class="tab-link" onclick="openTab(event, 'Versoes')">Versões</button>
+        </div>
+
+        <div id="Rankings" class="tab-content">
+            <h2>Rankings</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum nobis totam iure dolorum autem repellendus, voluptates voluptatum unde animi non vel soluta culpa nesciunt quos omnis explicabo repudiandae ipsam. Nobis, veritatis beatae atque quod voluptate aspernatur. Perferendis porro itaque veniam quibusdam? Enim corporis dignissimos natus voluptatibus sed, explicabo porro!</p>
+            <img src="assets/Features/Rankings.jpg" alt="Imagem 1">
+        </div>
+
+        <div id="Jogos" class="tab-content" style="display:none">
+            <h2>Jogos</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed vitae suscipit aperiam ducimus! Accusantium voluptatum laboriosam, molestiae eos omnis corrupti ad exercitationem nemo et perspiciatis non praesentium, reprehenderit magni voluptas odio. Laborum reprehenderit sunt quaerat debitis, id itaque rerum obcaecati deserunt voluptate inventore sapiente iusto? Fuga totam non similique aut.</p>
+            <img src="assets/Features/Jogos.jpg" alt="Imagem 2">
+        </div>
+
+        <div id="Perfil" class="tab-content" style="display:none">
+            <h2>Perfil</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed vitae suscipit aperiam ducimus! Accusantium voluptatum laboriosam, molestiae eos omnis corrupti ad exercitationem nemo et perspiciatis non praesentium, reprehenderit magni voluptas odio. Laborum reprehenderit sunt quaerat debitis, id itaque rerum obcaecati deserunt voluptate inventore sapiente iusto? Fuga totam non similique aut.</p>
+            <img src="assets/Features/Perfil.jpg" alt="Imagem 3">
+        </div>
+
+        <div id="Versoes" class="tab-content" style="display:none">
+            <h2>Versões</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed vitae suscipit aperiam ducimus! Accusantium voluptatum laboriosam, molestiae eos omnis corrupti ad exercitationem nemo et perspiciatis non praesentium, reprehenderit magni voluptas odio. Laborum reprehenderit sunt quaerat debitis, id itaque rerum obcaecati deserunt voluptate inventore sapiente iusto? Fuga totam non similique aut.</p>
+            <img src="assets/Features/Versões.jpg" alt="Imagem 4">
+        </div>
+    </div>
+
+    <div id="sobre-a-empresa" class="sobre-a-empresa">
+        <h1>Sobre a empresa</h1>
+        <hr>
+        <div class="sobre-a-empresa-content">
+            <div id="sobre-a-empresa-hero">
+                <div class="logo-container">
+                    <img id="logo-rgb" src="assets/Logo.svg" alt="logo">
+                    <div class="logo-border"></div>
+                </div>
+                <div class="sobre-a-empresa-text">
+                    <p>A P-Media está desenvolvendo uma plataforma de jogos web, onde os jogadores poderão se reunir para jogar seus games preferidos. Será uma plataforma com foco em compartilhar jogos, trocar experiências e auxiliar a comunidade de games a crescer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="jogos">
+        <h1>Jogos</h1>
+        <hr>
+        <div id="jogos-content">
+            <div class="jogo">
+                <img src="assets/Jogos/DemoGame.jpg" alt="jogo1">
+                <p>Demo game</p>
+            </div>
+            <div class="jogo">
+                <img src="assets/Jogos/DemoGame2.jpg" alt="jogo2">
+                <p>Demo game II</p>
+            </div>
+            <div class="jogo">
+                <img src="assets/Jogos/DemoGameRemastered.jpg" alt="jogo3">
+                <p>Demo game: Remastered</p>
+            </div>
+            <div class="jogo">
+                <img src="assets/Jogos/DemoGameFinale.jpg" alt="jogo4">
+                <p>Demo game III: Finale</p>
+            </div>
+        </div>
+
+        <button id="ver-mais">Ver mais</button>
+    </div>
+
+    <div id="ranking-div">
+        <h1>Rankings</h1>
+        <hr>
+        <div id="raking-content">
+            <table>
+                <thead>
+                  <tr>
+                    <th>Posição</th>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Pontos</th>
+                    <th>Jogo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><img class="imgProfile" src="assets/Rankings/Profile.png" alt="profile-img">João</td>
+                    <td>01/07/2024</td>
+                    <td>5000</td>
+                    <td>Demo game</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><img class="imgProfile" src="assets/Rankings/Profile.png" alt="profile-img">Marcos</td>
+                    <td>02/07/2024</td>
+                    <td>4800</td>
+                    <td>Demo game II</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><img class="imgProfile" src="assets/Rankings/Profile.png" alt="profile-img">Cleiton</td>
+                    <td>03/07/2024</td>
+                    <td>4500</td>
+                    <td>Demo game: Remastered</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+
+    <div id="perfil">
+    <h1>Perfil</h1>
+    <hr>
+    <div id="pefil-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quod, eveniet a exercitationem maxime dignissimos dolore. Quibusdam eveniet, deserunt officia, debitis, iusto veniam tenetur fugit labore nisi unde asperiores consequuntur temporibus! Eos, suscipit, aperiam repellat officiis officia asperiores nobis fugit veniam illo vel, consequuntur modi neque doloribus eligendi? At, ullam?</p>
+        <div id="card-perfil">
+            <img src="assets/Perfil/Player.png" alt="peffil-img">
+            <h2>User</h2>
+            <h2>Pontos totais: 1M</h2>
+        </div>
+    </div>
+    </div>
+
+    <div id="versoes">
+        <h1>Versões</h1>
+        <hr>
+        <div id="imagens-versoes">
+            <img src="assets/Jogos/DemoGame.jpg" alt="jogo1">
+            <img src="assets/Jogos/DemoGame2.jpg" alt="jogo2">
+            <img src="assets/Jogos/DemoGameRemastered.jpg" alt="jogo3">
+            <img src="assets/Jogos/DemoGameFinale.jpg" alt="jogo4">
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <div id="footer-content">
+            <h2>Termos e Condições</h2>
+            <h2><strong>P-MEDIA ©</strong></h2>
+            <h2>Políticas de privacidade</h2>
+        </div>
+    </footer>
+
+
+</body>
+</html>
